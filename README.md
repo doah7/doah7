@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/header.svg" alt="doah7" width="100%">
+  <img src="assets/header.svg" alt="doasi" width="100%">
 </p>
 
 <p align="center">
@@ -12,7 +12,6 @@
 ### 🐾 About
 
 - 🎬 지금 만드는 것 — 태블릿용 개인 영화 감상 앱 **ClipViewer**
-- 🛠 필요한 도구는 직접 만들어 쓰는 편이에요
 
 <img src="assets/divider.svg" width="100%">
 

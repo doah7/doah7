@@ -9,5 +9,7 @@
     </linearGradient>
   </defs>
   <rect x="0" y="11" width="1200" height="2" rx="1" fill="url(#l)"/>
-  <path d="M588 12 q6 -6 12 0 q6 -6 12 0" fill="none" stroke="#A9CBEB" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="582" cy="12" r="5" fill="#2E5490"/>
+  <circle cx="600" cy="12" r="5" fill="#A9CBEB"/>
+  <circle cx="618" cy="12" r="5" fill="#F3B9C9"/>
 </svg>

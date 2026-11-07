@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#24262C"/>
+      <stop offset="0" stop-color="#25272D"/>
       <stop offset="1" stop-color="#17181C"/>
     </linearGradient>
     <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
@@ -9,51 +9,40 @@
       <stop offset="0.55" stop-color="#A9CBEB"/>
       <stop offset="1" stop-color="#7FC4E3"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#A9CBEB" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#A9CBEB" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glowPink" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#F3B9C9" stop-opacity="0.18"/>
-      <stop offset="1" stop-color="#F3B9C9" stop-opacity="0"/>
-    </radialGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3A64A6"/>
+      <stop offset="1" stop-color="#1B2A6B"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2" fill="#A9CBEB" fill-opacity="0.16"/>
+    </pattern>
+    <pattern id="stripes" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="5" height="14" fill="#F3B9C9" fill-opacity="0.55"/>
+    </pattern>
+    <clipPath id="card"><rect width="1200" height="300" rx="24"/></clipPath>
   </defs>
 
-  <rect width="1200" height="300" rx="24" fill="url(#bg)"/>
-  <circle cx="960" cy="120" r="230" fill="url(#glow)"/>
-  <circle cx="120" cy="300" r="200" fill="url(#glowPink)"/>
+  <g clip-path="url(#card)">
+    <rect width="1200" height="300" fill="url(#bg)"/>
 
-  <!-- 작은 새 (하늘색 선) -->
-  <g fill="none" stroke="#A9CBEB" stroke-width="4" stroke-linecap="round" opacity="0.55">
-    <path d="M610 58 q10 -10 20 0 q10 -10 20 0"/>
-    <path d="M700 238 q8 -8 16 0 q8 -8 16 0"/>
-    <path d="M1100 64 q8 -8 16 0 q8 -8 16 0"/>
-    <path d="M520 250 q7 -7 14 0 q7 -7 14 0"/>
-    <path d="M1080 236 q9 -9 18 0 q9 -9 18 0"/>
+    <!-- 점 패턴 -->
+    <rect x="560" y="0" width="640" height="300" fill="url(#dots)"/>
+
+    <!-- 도형 구성 -->
+    <circle cx="1010" cy="150" r="128" fill="url(#navy)"/>
+    <circle cx="1010" cy="150" r="128" fill="none" stroke="#1B2A6B" stroke-width="6"/>
+    <circle cx="880" cy="214" r="70" fill="none" stroke="#A9CBEB" stroke-width="10" stroke-opacity="0.9"/>
+    <path d="M1080 0 A 92 92 0 0 0 1172 92 L 1172 0 Z" fill="#F3B9C9" fill-opacity="0.85"/>
+    <circle cx="1118" cy="236" r="44" fill="url(#stripes)"/>
+    <circle cx="1118" cy="236" r="44" fill="none" stroke="#F3B9C9" stroke-width="3" stroke-opacity="0.7"/>
+    <circle cx="930" cy="70" r="18" fill="#7FC4E3"/>
+    <circle cx="968" cy="112" r="7" fill="#CDEBF7"/>
+    <rect x="770" y="58" width="56" height="56" rx="14" fill="none" stroke="#7FC4E3" stroke-width="5" transform="rotate(18 798 86)"/>
+    <path d="M700 252 l26 -36 l26 36 Z" fill="#2E5490" stroke="#A9CBEB" stroke-width="3" stroke-linejoin="round"/>
   </g>
 
-  <!-- 깃털 (분홍 점선) -->
-  <g fill="none" stroke-linecap="round">
-    <path d="M40 268 C 110 220, 190 214, 262 236" stroke="#F3B9C9" stroke-width="16" stroke-dasharray="18 7" opacity="0.75"/>
-    <path d="M30 278 L 64 258" stroke="#E58FA8" stroke-width="5"/>
-  </g>
-
-  <!-- 고양이 얼굴 (단순한 도형) -->
-  <g transform="translate(905 70)">
-    <path d="M18 62 L28 6 L70 40 Z" fill="#2E5490" stroke="#1B2A6B" stroke-width="6" stroke-linejoin="round"/>
-    <path d="M182 62 L172 6 L130 40 Z" fill="#2E5490" stroke="#1B2A6B" stroke-width="6" stroke-linejoin="round"/>
-    <ellipse cx="100" cy="98" rx="92" ry="74" fill="#2E5490" stroke="#1B2A6B" stroke-width="6"/>
-    <ellipse cx="64" cy="98" rx="17" ry="21" fill="#CDEBF7" stroke="#1B2A6B" stroke-width="4"/>
-    <ellipse cx="136" cy="98" rx="17" ry="21" fill="#CDEBF7" stroke="#1B2A6B" stroke-width="4"/>
-    <ellipse cx="66" cy="102" rx="9" ry="12" fill="#7FC4E3"/>
-    <ellipse cx="134" cy="102" rx="9" ry="12" fill="#7FC4E3"/>
-    <circle cx="68" cy="104" r="4.5" fill="#1B2A6B"/>
-    <circle cx="132" cy="104" r="4.5" fill="#1B2A6B"/>
-    <path d="M96 122 L104 122 L100 127 Z" fill="#F3B9C9"/>
-    <path d="M88 132 q6 6 12 0 q6 6 12 0" fill="none" stroke="#1B2A6B" stroke-width="3" stroke-linecap="round"/>
-  </g>
-
-  <text x="80" y="150" font-family="'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="96" font-weight="800" fill="url(#name)" letter-spacing="-2">doah7</text>
-  <rect x="84" y="174" width="120" height="5" rx="2.5" fill="#F3B9C9"/>
-  <text x="82" y="222" font-family="'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="28" fill="#E4E7EC">만들고 싶은 걸 직접 만들어 씁니다</text>
+  <text x="80" y="170" font-family="'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="104" font-weight="800" fill="url(#name)" letter-spacing="-2">doasi</text>
+  <rect x="86" y="196" width="72" height="8" rx="4" fill="#F3B9C9"/>
+  <rect x="166" y="196" width="36" height="8" rx="4" fill="#7FC4E3"/>
+  <rect x="210" y="196" width="18" height="8" rx="4" fill="#2E5490"/>
 </svg>
