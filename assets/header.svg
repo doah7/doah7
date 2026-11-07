@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#24262C"/>
+      <stop offset="1" stop-color="#17181C"/>
+    </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#CDEBF7"/>
+      <stop offset="0.55" stop-color="#A9CBEB"/>
+      <stop offset="1" stop-color="#7FC4E3"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#A9CBEB" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#A9CBEB" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowPink" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F3B9C9" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#F3B9C9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="300" rx="24" fill="url(#bg)"/>
+  <circle cx="960" cy="120" r="230" fill="url(#glow)"/>
+  <circle cx="120" cy="300" r="200" fill="url(#glowPink)"/>
+
+  <!-- 작은 새 (하늘색 선) -->
+  <g fill="none" stroke="#A9CBEB" stroke-width="4" stroke-linecap="round" opacity="0.55">
+    <path d="M610 58 q10 -10 20 0 q10 -10 20 0"/>
+    <path d="M700 238 q8 -8 16 0 q8 -8 16 0"/>
+    <path d="M1100 64 q8 -8 16 0 q8 -8 16 0"/>
+    <path d="M520 250 q7 -7 14 0 q7 -7 14 0"/>
+    <path d="M1080 236 q9 -9 18 0 q9 -9 18 0"/>
+  </g>
+
+  <!-- 깃털 (분홍 점선) -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M40 268 C 110 220, 190 214, 262 236" stroke="#F3B9C9" stroke-width="16" stroke-dasharray="18 7" opacity="0.75"/>
+    <path d="M30 278 L 64 258" stroke="#E58FA8" stroke-width="5"/>
+  </g>
+
+  <!-- 고양이 얼굴 (단순한 도형) -->
+  <g transform="translate(905 70)">
+    <path d="M18 62 L28 6 L70 40 Z" fill="#2E5490" stroke="#1B2A6B" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M182 62 L172 6 L130 40 Z" fill="#2E5490" stroke="#1B2A6B" stroke-width="6" stroke-linejoin="round"/>
+    <ellipse cx="100" cy="98" rx="92" ry="74" fill="#2E5490" stroke="#1B2A6B" stroke-width="6"/>
+    <ellipse cx="64" cy="98" rx="17" ry="21" fill="#CDEBF7" stroke="#1B2A6B" stroke-width="4"/>
+    <ellipse cx="136" cy="98" rx="17" ry="21" fill="#CDEBF7" stroke="#1B2A6B" stroke-width="4"/>
+    <ellipse cx="66" cy="102" rx="9" ry="12" fill="#7FC4E3"/>
+    <ellipse cx="134" cy="102" rx="9" ry="12" fill="#7FC4E3"/>
+    <circle cx="68" cy="104" r="4.5" fill="#1B2A6B"/>
+    <circle cx="132" cy="104" r="4.5" fill="#1B2A6B"/>
+    <path d="M96 122 L104 122 L100 127 Z" fill="#F3B9C9"/>
+    <path d="M88 132 q6 6 12 0 q6 6 12 0" fill="none" stroke="#1B2A6B" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <text x="80" y="150" font-family="'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="96" font-weight="800" fill="url(#name)" letter-spacing="-2">doah7</text>
+  <rect x="84" y="174" width="120" height="5" rx="2.5" fill="#F3B9C9"/>
+  <text x="82" y="222" font-family="'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="28" fill="#E4E7EC">만들고 싶은 걸 직접 만들어 씁니다</text>
+</svg>

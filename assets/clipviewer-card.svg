@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22242A"/>
+      <stop offset="1" stop-color="#1A1B20"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E5490"/>
+      <stop offset="0.5" stop-color="#A9CBEB"/>
+      <stop offset="1" stop-color="#F3B9C9"/>
+    </linearGradient>
+    <linearGradient id="play" gradientUnits="userSpaceOnUse" x1="40" y1="33" x2="76" y2="75">
+      <stop offset="0" stop-color="#FF4D5E"/>
+      <stop offset="1" stop-color="#2FE08A"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="1198" height="218" rx="22" fill="url(#bg)" stroke="#2F3239" stroke-width="2"/>
+  <rect x="1" y="1" width="1198" height="6" rx="3" fill="url(#bar)"/>
+
+  <g transform="translate(44 46)">
+    <rect width="128" height="128" rx="30" fill="#2C2F35"/>
+    <g transform="translate(10 10)">
+      <path d="M44,37 L44,71 L73,54 Z" fill="url(#play)" stroke="url(#play)" stroke-width="9" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <text x="204" y="96" font-family="'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="44" font-weight="700" fill="#FFFFFF">ClipViewer</text>
+  <text x="206" y="136" font-family="'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="24" fill="#C9CCD3">태블릿용 개인 영화 감상 앱 · Android / Java</text>
+
+  <g font-family="'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="18">
+    <rect x="206" y="156" width="118" height="32" rx="16" fill="#2E5490" fill-opacity="0.35" stroke="#2E5490"/>
+    <text x="265" y="178" text-anchor="middle" fill="#CDEBF7">전체화면 감상</text>
+    <rect x="334" y="156" width="96" height="32" rx="16" fill="#A9CBEB" fill-opacity="0.12" stroke="#A9CBEB" stroke-opacity="0.6"/>
+    <text x="382" y="178" text-anchor="middle" fill="#A9CBEB">TMDB 연동</text>
+    <rect x="440" y="156" width="118" height="32" rx="16" fill="#F3B9C9" fill-opacity="0.12" stroke="#F3B9C9" stroke-opacity="0.6"/>
+    <text x="499" y="178" text-anchor="middle" fill="#F3B9C9">감독 필모그래피</text>
+  </g>
+
+  <text x="1150" y="122" text-anchor="end" font-family="'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="22" fill="#A9CBEB">자세히 보기 →</text>
+</svg>
